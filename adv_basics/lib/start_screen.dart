@@ -1,5 +1,6 @@
 //import 'package:adv_basics/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage(this.startQuiz, {super.key});
@@ -18,12 +19,19 @@ class MainPage extends StatelessWidget {
             color: const Color.fromARGB(150, 255, 255, 255),
           ),
           const SizedBox(height: 80),
-          Text(
-            'Learn Flutter the fun way!',
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 24,
-            ),
+            Text(
+              'Learn Flutter the fun way!',
+              style: GoogleFonts.titilliumWeb(
+                color: const Color.fromARGB(255, 223, 152, 255),
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+              ),          
+          // Text(
+          //   'Learn Flutter the fun way!',
+          //   style: TextStyle(
+          //     color: Colors.white,
+          //     fontSize: 24,
+          //   ),
           ),
           const SizedBox(height: 30),
           OutlinedButton.icon(
